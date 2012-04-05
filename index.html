@@ -1,32 +1,32 @@
-<!doctype html>  
+<!doctype html>
 <html lang="en">
-	
+
 	<head>
 		<meta charset="utf-8">
-		
-		<title>HTML5 introduction - revolunet</title>
 
-		<meta name="author" content="Hakim El Hattab">
-		
+		<title>introduction à HTML5</title>
+
+		<meta name="author" content="Arlo Borras/Hakim El Hattab">
+
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-		
+
 		<link rel="stylesheet" href="reveal/css/reset.css">
 		<link rel="stylesheet" href="reveal/css/main.css">
 
 		<link rel="stylesheet" href="reveal/lib/zenburn.css">
 		<style>
 			#reveal .slides {
-				top:40%;
+				top:45%;
 			}
-			#reveal h1.huge {
-				font-size:300px;
+
+			#reveal .slides {
+				width: 1000px;
 			}
-			#reveal h2 {
-				font-size:160px;
+
+			#reveal .footnote {
+				top:80%;
 			}
-			#reveal h3 {
-				font-size:120px;
-			}
+
 			.pink {
 				color:#F06 !important;
 			}
@@ -43,35 +43,35 @@
 				margin-bottom:20px;
 				line-height:50px;
 			}
-			@-webkit-keyframes blinker {  
-			  0% { opacity: 1.0; }
-			  50% { opacity: 0.0; }
-			  100% { opacity: 1.0; }
+			@-webkit-keyframes blinker {
+				0% { opacity: 1.0; }
+				50% { opacity: 0.0; }
+				100% { opacity: 1.0; }
 			}
 			.blinktag {
-			  -webkit-animation-name: blinker;  
-			  -webkit-animation-iteration-count: infinite;  
-			  -webkit-animation-timing-function: ease-in;
-			  -webkit-animation-duration: 1s; 
+				-webkit-animation-name: blinker;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: ease-in;
+				-webkit-animation-duration: 1s;
 			}
-			@-webkit-keyframes lightblinker {  
-			  0% { opacity: 1.0; }
-			  50% { opacity: 0.7; }
-			  100% { opacity: 1.0; }
+			@-webkit-keyframes lightblinker {
+				0% { opacity: 1.0; }
+				50% { opacity: 0.7; }
+				100% { opacity: 1.0; }
 			}
 			.lightblinktag {
-			  -webkit-animation-name: lightblinker;  
-			  -webkit-animation-iteration-count: infinite;  
-			  -webkit-animation-timing-function: ease-in;
-			  -webkit-animation-duration: 1.5s; 
+				-webkit-animation-name: lightblinker;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: ease-in;
+				-webkit-animation-duration: 1.5s;
 			}
 		</style>
 	</head>
-	
+
 	<body>
-		
+
 		<div id="reveal">
-			
+
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
@@ -84,39 +84,69 @@
 						document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
 					</script>
 				</section>
-				
+
 				<section>
-					<h2>Who's that ?</h2>
+					<h1>Qui sommes-nous ?</h1>
 					<br>
-					<ul>
-						<li>+10 years in #webdev</li>
-						<li>RIA & mobile web development</li>
-						<li>Open source supporter</li>
-						<li>Beer drinker</li>
-
-					</ul>
-
-					
-					<br><br>
-						<i><a href="http://revolunet.com">Julien Bouquillon</a> / <a href="http://twitter.com/revolunet">@revolunet</a></i>
+					<p>
+						<strong>Guillaume Cisco</strong>, Ingénieur Web, DT e-TF1
+					</p
 					<br>
-					<a href='http://revolunet.com'><img src='img/revolunet.jpeg' width=100 height=100 /></a>
+					<p>
+						<strong>Arlo Borras</strong>, Architecte Logiciel, Manager technique, DT e-TF1
+					</p>
+					<br>
+
+					<br>
+					<br>
+					<p class="fragment">Utilisateurs/contributeurs de logiciels Open source</p>
 				</section>
-				
+
+				<section>
+					<h1>Notre métier</h1>
+					<p class="fragment">
+						Développement de sites Web
+					</p>
+					<img class="fragment" src="img/site-etf1.png"/>
+					<br>
+					<br>
+
+					<p class="fragment">
+						Déclinaisons IPTV, mobiles, TV connectées
+					</p>
+					<img class="fragment" src="img/logo-mytf1.png" height="100"/>
+					<img class="fragment" src="img/logo-tfou.jpeg" height="100"/>
+				</section>
+				<section>
+					<h1>Plan</h1>
+					<br>
+					<h3>Un peu d'histoire</h3>
+					<h3>HTML5, la spec</h3>
+					<h3>HTML5, les technologies</h3>
+					<br>
+					<h3>Présentation responsive design</h3>
+					<br>
+					<h3>Conclusion</h3>
+
+					<h3 class="fragment orange">Beaucoup de démos</h3>
+
+
+				</section>
+
 				<section>
 					<section>
-						<h1>History bits</h1>
+						<h1>Un peu d'histoire</h1>
 						<img src="img/pyramid.jpeg"/>
 					</section>
 					<section>
 						<h1>1990</h1>
 						<h3>Tim Berners-Lee</h3>
-						creates the internet and HTML 1.0 at French CERN
+						Invente l'internet et HTML 1.0 au CERN
 						<br/>
 						<img src="img/tim.jpeg"/>
 					</section>
 					<section>
-						<h1>awesome websites</h1>
+						<h1>Premier site web</h1>
 						<br>
 						<img src="img/first-website.png"/>
 						<br>
@@ -125,23 +155,23 @@
 					<section>
 						<h1>1994</h1>
 						<h3>Tim Berners-Lee</h3>
-						funds the W3C at Boston MIT
+						création du W3C au Boston MIT
 						<br/>
 						<img src="img/w3c-small.jpeg"/>
 					</section>
 					<section>
-						<h1>awesome websites</h1>
+						<h1>Netscape Navigator</h1>
 						<br>
-						<img src="img/1994.png"/>
+						<a href="http://fr.wikipedia.org/wiki/Hypertext_Markup_Language#1994_:_Apports_de_Netscape_Navigator" target="_blank"/><img src="img/1994.png"/></a>
 						<br>
 						(1994)
 					</section>
 					<section>
-						<h1>awesome websites</h1>
+						<h1>HTML 2</h1>
 						<br>
-						<img src="img/1998.jpeg"/>
+						<img src="img/19-03_yahoo1996.png"/>
 						<br>
-						(1998)
+						(1995)
 					</section>
 					<section>
 						<h1>HTML EARLY DAYS</h1>
@@ -159,11 +189,8 @@
 						</ul>
 						<div style='clear:both'></div>
 					</section>
-
 					<section>
-						<h1>XHTML FAILURE</h1>
-						<!-- <i><div style='font-size:60px;line-height:70px'> -->
-						<img src="img/lolcat_404.jpeg"/>
+						<h1>LA DECONFITURE XHTML</h1>
 						<br><br>
 						<blockquote>
 						It is necessary to
@@ -173,10 +200,9 @@
 						The attempt to switch to XML didn't work.</blockquote>
 						<br>
 						<div style='text-align:right'>Tim Berners Lee, 2004</div>
-						
 					</section>
 					<section>
-						<h1>HTML REBIRTH</h1>
+						<h1>RENAISSANCE</h1>
 						<img src="img/phoenix.jpeg" style='float:left'/>
 						<br><br>
 						<ul>
@@ -188,25 +214,26 @@
 							<li style='font-size:80px;font-weight:bold' class='pink'>HTML5 FUTURE</li>
 						</ul>
 						<div style='clear:both'></div>
-					</section> 
+					</section>
+					<section>
+						<h1>W3C AGAIN</h1>
+						<img src="img/w3c-HTML5-adoption.png"/>
+						<br>
+						(2007)
+						<br>
+						<br>
+						<p>
+							<a href="http://www.w3.org/2002/09/wbs/40318/htmlbg/results" target="_blank">Vote d'adoption du HTML5 par le W3C</a>
+						</p>
+					</section>
 				</section>
 
 				<section>
-						<h1 style='font-size:200px' >HTML5 IS NOT</h1>
-						<br>
-						<h3 class=" lightblue">CSS3 nor SVG</h3>
-						<h3 style='font-size:140px' class="fragment orange">JAVASCRIPT</h3>
-						<h3 style='font-size:180px'  class="fragment lightblue">FINISHED</h3>
-						
-				</section>
-				<section>
-						<h1 style='font-size:200px'>HTML5 IS</h1>
-						<br>
-						<h3 class=" lightblue" style="font-size:165px">A Working draft</h3>
-						<h3 class="fragment orange" style="font-size:85px">Backward + Forward compatible</h3>
-						<h3 class="fragment lightblue" style="font-size:110px">made for the modern web</h3>
-						<h3 class="fragment orange">and its various devices</h3>
-						<!-- TODO -->
+					<h1 style='font-size:200px'>HTML5 IS</h1>
+					<br>
+					<h3 class="lightblue" style="font-size:165px">A Working draft</h3>
+					<br>
+					<h3 class="fragment" style="font-size:140px"><a href="http://www.w3.org/2011/02/htmlwg-pr.html" class="fragment orange"target="_blank">Available in 2014</a></h3>
 				</section>
 
 				<section>
@@ -215,22 +242,26 @@
 						<h1 class="blinktag huge pink">NEW ?</H1>
 					</section>
 					<section>
-						<h1>Syntax</h1>
+						<h1>Syntaxe</h1>
 						<br>
-						<ul>
-							<li class=" lightblue" style="font-size:80px;">New elements</li>
-							<li>header, footer, section, article, nav...</li>
+						<h3 class="lightblue">Nouveaux élements</h3>
+						<p>header, footer, section, article, nav...</p>
 							<br>
-							<li class=" lightblue" style="font-size:70px;">New / enhanced attributes</li>
-							<li>data-*, contenteditable, accesskey, draggable/dropzone, spellcheck...</li>
-							<br>
-							<li class=" pink" style="font-size:80px;font-weight:bold">Easier than ever</li>
-						</ul>
+						<h3 class="lightblue">Attributs nouveaux ou améliorés</h3>
+						<p>data-*, contenteditable, accesskey, draggable/dropzone, spellcheck...</p>
+						<br>
+						<p>
+							<a href="http://www.w3.org/TR/html5-diff/" target="_blank">Le tout retrocompatible avec l'existant.</a>
+						</p>
 					</section>
+
+
+
 					<section>
-						<h1>HTML5 structure</h1>
+						<h2>HTML5 structure et sémantique</h2>
 						<br>
-						<pre><code style='font-size:20px;line-height:25px'>&lt;!doctype html&gt;
+						<pre><code style='font-size:20px;line-height:25px'>
+&lt;!doctype html&gt;
 &lt;html&gt;
 	&lt;head&gt;
 		&lt;meta charset="utf-8"&gt;
@@ -249,36 +280,10 @@
 		&lt;footer&gt;copyright 2012&lt;/footer&gt;
 	&lt;/body&gt;
 &lt;/html&gt;</code></pre>
+<br>
+<a href="http://slides.html5rocks.com/#semantic-tags-1" target="_blank">DEMO</a>
 					</section>
-					<section>
-						<h1>Semantic</h1>
-						<br>
-						<ul>
-							<li class=" lightblue" style="font-size:60px;">Microdata (ex microformats)</li>
-							<li>Give more sense to your markup</li>
-							<li>googlebot friendly (rich snippets)</li>
-							<li>standards friendly</li>
-							<br>
-							<li class=" lightblue" style="font-size:80px;">ARIA</li>
-							<li>Accessibility</li>
-							<li>role, tabindex, state & properties</li>
-						</ul>
-					</section>
-					<section>
-						<h1>New features</h1>
-						<ul>
-							<br>
-							<li class=" lightblue" style="font-size:80px;">Offline access (mobile)</li>
-							<br>
-							<li class=" pink" style="font-size:80px;">Storage & Device access</li>
-							<br>
-							<li class=" lightblue" style="font-size:80px;">Multimedia & graphics</li>
-							<br>
-							<li class=" pink" style="font-size:80px;">Communications</li>
-							<br>
-							<li class=" lightblue" style="font-size:80px;">Better forms</li>
-						</ul>
-					</section>
+
 					<section>
 						<h1>HTML5 form example</h1>
 						<br>
@@ -290,68 +295,215 @@
 	input[required]:invalid { border: 1px solid red; }
 	input[required]:valid { border: 3px solid green; }
 	// validation styling
-	::-webkit-validation-bubble-message{
-		border:2px solid green;
-		background: -webkit-gradient(linear, left top,....;
-	}
+	::-webkit-validation-bubble-message{ border:2px solid green; }
 &lt;/style&gt;
 &lt;form&gt;
-  &lt;input type="text" placeholder="Nom & prénom" title="Nom ET Prénom SVP" pattern="\w+\s+\w+"&gt;
-  &lt;br&gt;
-  &lt;input type="email" required  placeholder="Votre email"&gt;
-  &lt;br&gt;
-  &lt;input type="tel" placeholder="Téléphone" pattern="[\d\s\.]+"&gt;
-  &lt;br&gt;
-  &lt;input type="range" min="1" max="100" value="28" &gt;
-  &lt;br&gt;
-  &lt;input type="submit" &gt;
+	&lt;input type="text" placeholder="Nom & prénom" title="Nom ET Prénom SVP" pattern="\w+\s+\w+"&gt;
+	&lt;br&gt;
+	&lt;input type="email" required	 placeholder="Votre email"&gt;
+	&lt;br&gt;
+	&lt;input type="tel" placeholder="Téléphone" pattern="[\d\s\.]+"&gt;
+	&lt;br&gt;
+	&lt;input type="range" min="1" max="100" value="28" &gt;
+	&lt;br&gt;
+	&lt;input type="submit" &gt;
 &lt;/form&gt;</code></pre>
-					</section>
-					<section>
-						<h1>Awesome HTML5 form</h1>
 						<br>
-						<img src="img/form1.png"/>
+						<a href="form.html" target="_blank">DÉMO 1</a>
+						<a href="http://slides.html5rocks.com/#new-form-types" target="_blank"> - 2</a>
 					</section>
-					<section>
-						<h1>Javascript APIs</h1>
-						<ul>
-							<br>
-							<li class=" lightblue" style="font-size:80px;">Canvas 2D/3D</li>
-							<br>
-							<li class=" pink" style="font-size:80px;">Drag & Drop</li>
-							<br>
-							<li class=" lightblue" style="font-size:80px;">History API</li>
-							<br>
-							<li class=" pink" style="font-size:80px;">Geolocation</li>
-							<br>
-							<li class=" lightblue" style="font-size:70px;">Web Workers, Web Sockets</li>
-							<li class=" pink" style="font-size:80px;">...</li>
-						</ul>
-					</section>
-					<section>
-						<h1>10 secs geolocation</h1>
+				</section>
+
+				<section>
+					<br>
+					<br>
+					<br>
+					<img src="img/top-100-sites-doctype.jpg">
+				</section>
+
+				<section>
+					<h1></h1>
+					<br>
+					<br>
+					<h1>Fin de la première partie</h1>
+					<br>
+				</section>
+
+
+				<section>
+						<h1 style='font-size:200px'>HTML5 AS</h1>
 						<br>
-						<pre><code style='font-size:18px;line-height:25px'>&lt;script &gt;
+						<h1 class="lightblue" >A set of technologies</h1>
+						<br>
+						<a href="http://www.w3.org/html/logo/#the-technology" target="_blank"><img src="img/html5-techno.png"></a>
+				</section>
+
+				<section>
+					<h1>Évolutions</h1>
+
+						<h3>Sémantique</h3>
+						<h3>Storage et mode deconnecté (mobile)</h3>
+						<h3>Device access</h3>
+						<h3>Communications</h3>
+						<h3>Multimedia</h3>
+						<h3>Graphiques</h3>
+						<h3>Performance</h3>
+						<h3>CSS3</h3>
+				</section>
+
+				<section>
+					<h1>Sémantique</h1>
+					<br>
+					<h3><a href="http://www.schema.org/Recipe" target="_blank" class="lightblue">Microdata (ex microformats)</a></h3>
+					<p>
+						Développés pour élaborer des vocabulaires spécifiques.
+						<br>
+						Facilite le référencement par les moteurs de recherche
+					</p>
+					<pre style='font-size:20px;line-height:25px'><code class="html">
+&lt;div itemscope itemtype=&quot;http://data-vocabulary.org/Person&quot;&gt;
+ &lt;img src=&quot;avatar.jpg&quot; itemprop=&quot;photo&quot;&gt;
+	My name is &lt;span itemprop=&quot;name&quot;&gt;John Cox&lt;/span&gt;, and I am a &lt;span itemprop=&quot;title&quot;&gt;writer&lt;/span&gt; for
+	&lt;a href=&quot;http://net.tutsplus.com&quot; itemprop=&quot;affliation&quot;&gt;Nettuts+&lt;/a&gt;.
+	I live in
+	&lt;span itemprop=&quot;address&quot; itemscope
+		itemtype=&quot;http://data-vocabulary.org/Address&quot;&gt;
+		&lt;span itemprop=&quot;locality&quot;&gt;Louisville&lt;/span&gt;,
+		&lt;span itemprop=&quot;region&quot;&gt;KY&lt;/span&gt;
+	&lt;/span&gt;
+&lt;/div&gt;
+					</code></pre>
+				</section>
+
+
+				<section>
+					<h1>Offline & Storage</h1>
+					<br>
+					<h3 class="orange">Une base de données dans votre navigateur</h3>
+					<h3>Web Storage</h3>
+					<h3>WebSQLStorage</h3>
+					<h3>IndexedDB</h3>
+					<h3>ApplicationCache</h3>
+
+					<br>
+					<a href="http://slides.html5rocks.com/#web-storage" target="_blank">DÉMO</a>
+				</section>
+
+
+				<section>
+					<h1>Device Access</h1>
+
+					<br>
+					<a href="http://www.html5rocks.com/en/tutorials/device/orientation/deviceorientationsample.html" target="_blank">DÉMO</a>
+				</section>
+
+
+				<section>
+					<h1>Communications</h1>
+					<p>
+						communication web bidirectionnelle, client / serv.
+					</p>
+					<div class="fragment" style="display:inline-block"><img src="img/Polling-Diagram1.png"><br>Long polling</div>
+					<div class="fragment" style="display:inline-block"><img src="img/Web-Sockets-Diagram1.png"><br>Websockets</div>
+
+					<br>
+					<a href="http://touitf1.tf1.fr/" target="_blank">DÉMO</a>
+				</section>
+
+				<section>
+					<h1>Multimédia</h1>
+						<br>
+						<p>vidéo, version simple</p>
+						<p><code style='font-size:20px;line-height:25px'><pre class="html">&lt;video src="myvideo.mp4" width="320" height="240"&gt;&lt;/video&gt;</pre></code></p>
+						<p class="fragment">vidéo, version complète</p>
+						<p><pre style='font-size:20px;line-height:25px' class="fragment"><code class="html">&lt;video width="320" height="240" poster="poster.jpg" controls="controls" preload="none"&gt;
+	&lt;!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 --&gt;
+	&lt;source type="video/mp4" src="myvideo.mp4" /&gt;
+	&lt;!-- WebM/VP8 for Firefox4, Opera, and Chrome --&gt;
+	&lt;source type="video/webm" src="myvideo.webm" /&gt;
+	&lt;!-- Ogg/Vorbis for older Firefox and Opera versions --&gt;
+	&lt;source type="video/ogg" src="myvideo.ogv" /&gt;
+	&lt;!-- Optional: Add subtitles for each language --&gt;
+	&lt;track kind="subtitles" src="subtitles.srt" srclang="en" /&gt;
+	&lt;!-- Optional: Add chapters --&gt;
+	&lt;track kind="chapters" src="chapters.srt" srclang="en" /&gt;
+&lt;/video&gt;</code></pre></p>
+				</section>
+
+				<section>
+					<h1>Graphiques</h1>
+					<br>
+					<h3>Canvas, SVG, WebGL 2D/3D</h3>
+					<a href="https://developers.google.com/chart/interactive/docs/gallery" target="_blank">DEMO</a></p>
+
+				</section>
+
+				<section>
+					<h1>Performance</h1>
+					<br>
+					<br>
+					<img src="img/js_evolution.png"/>
+				</section>
+
+				<section>
+					<h1>CSS3</h1>
+					<br>
+					<p><a href="http://www.zachstronaut.com/lab/isocube.html" target="_blank">DEMO</a></p>
+
+				</section>
+
+				<section>
+					<h1>Javascript APIs</h1>
+					<ul>
+						<li>Canvas 2D/3D</li>
+						<li>Geolocation</li>
+						<li>Web Workers, Web Sockets</li>
+						<li>PageVisibility History API</a></li>
+						<li>Drag and Drop</li>
+						<li>...</li>
+
+					</ul>
+						<p><a href="https://developer.mozilla.org/media/uploads/demos/s/p/spite/67b48d880d80d1f6e789918233fa2b6f/dont-lose-your-wayki_1314842262_demo_package/index.html" target="_blank">DEMO 1 </a>
+						<a href="http://www.samdutton.com/pageVisibility/" target="_blank">- 2</a></p>
+				</section>
+
+				<section>
+					<h1>10 secs geolocation</h1>
+					<br>
+					<pre><code style='font-size:18px;line-height:25px'>&lt;script &gt;
 function geolocate() {
-  navigator.geolocation.getCurrentPosition(success, error);
+	navigator.geolocation.getCurrentPosition(success, error);
 }
 function success(result) {
-  var co = result.coords;
-  document.getElementById('result').innerText = co.latitude + ',' + co.longitude;
+	var co = result.coords;
+	document.getElementById('result').innerText = co.latitude + ',' + co.longitude;
 }
 function error(result) {
-  document.getElementById('result').innerHTML = "geolocation failed :/";
+	document.getElementById('result').innerHTML = "geolocation failed :/";
 }
 &lt;/script&gt;
 &lt;h1&gt;Geolocation example&lt;/h1&gt;
 &lt;button onclick="geolocate()"&gt;geolocate me !&lt;/button&gt;
 &lt;h3 id="result"&gt;&lt;/h3&gt;
-</code></pre>
-					</section>
+						</code></pre>
+
+						<a href="http://html5demos.com/geo" target="_blank">DÉMO</a>
 				</section>
- 
+
 				<section>
-					<br>
+					<h2>Technologies serveurs</h2>
+					<br><br>
+					<a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html" target="_blank">TIOBE index</a>
+				</section>
+
+				<section>
+					<h2>SMARTPHONES et TABLETTES</h2>
+					<a href="http://mobilehtml5.org/" target="_blank"><img src='img/WebKit_logo.png' width="400"/></a>
+					<br><br>
+					<h2 class="fragment">IPTV, TV Connectées</h2>
+				</section>
+
+				<section>
 					<section>
 						<h1>HTML5 examples</h1>
 						<br><br>
@@ -371,7 +523,7 @@ function error(result) {
 					</section>
 					<section>
 						<h1>Body Browser</h1>
-						<img src="img/app-bodybrowser.jpeg"/>
+						<a href="http://www.zygotebody.com/" target="_blank"><img src="img/app-bodybrowser.jpeg"/></a>
 						<br><br>
 						WebGL 3D
 					</section>
@@ -380,22 +532,15 @@ function error(result) {
 						<img src="img/app-globetweeter.jpeg"/>
 						<br><br>
 						WebGL 3D, WebSockets, geolocation<br>
-						by <a href='http://twitter.com/trigrou' target='_blank' class='pink'>@trigrou</a>
+						<a href='http://plopbyte.com/globetweeter/' target='_blank' >DÉMO</a>
 					</section>
-				</section> 
-				
+				</section>
+
 				<section>
-					<br>
 					<section>
 						<h1>HTML5 examples</h1>
 						<br><br>
 						<h1 class="pink huge lightblinktag">GAMES</h1>
-					</section>
-					<section>
-						<h1>Zynga</h1>
-						<img src="img/game-zynga.png"/>
-						<br><br>
-						Offline, WebSockets, CSS3...
 					</section>
 					<section>
 						<h1>Quake 2 GWT</h1>
@@ -417,58 +562,50 @@ function error(result) {
 						Offline, Canvas, Storage
 					</section>
 				</section>
- 
- 				<section>
- 					<section>
-						<h1 class=''>HTML5 QuickStart</h1>
-						<br>
-						<ul>
-							<li style='font-size:60px'>Start with <span class='pink'><b>HTML5 Boilerplate</b></span></li>
-							<br>
-							<li style='font-size:80px'>Or <span class='pink'><b>Initializr</b></span> (lighter)</li>
-							<br>
-							<li><b>Good practices, graceful degradation</b></li>
-							<li>Server configs, htaccess, jQuery </li>
-							<li>Modernizr, default icons, reset CSS...</li>
-						</ul>
-					</section>
-					<section>
-						<h1 class=''>Tips</h1>
-						<br>
-						<ul>
-							<li>Avoid IE<9 to prevent headeaches</li>
-							<br>
-							<li >Replace presentational tags with CSS</li>
-							<br>
-							<li >Use &lt;div&gt; only when necessary</li>
-							<br>
-							<li>Load polyfills if needed (yepnope.js)</li>
-							<br>
-							<li>For IE : Html5shiv, Modernizr, CSS3pie...</li>
-						</ul>
-					</section>
-					<section>
-						<h1 class=''>Links</h1>
-						<ul>
-							<li><a href="html5rocks.com" target="_blank">html5rocks.com</a></li>
-							<li><a href="html5demos.com" target="_blank">html5demos.com</a></li>
-							<li><a href="html5doctor.com" target="_blank">html5doctor.com</a></li>
-							<li><a href="caniuse.com" target="_blank">caniuse.com</a></li>
-							<li><a href="html5boilerplate.com" target="_blank">html5boilerplate.com</a></li>
-							<li><a href="modernizr.com" target="_blank">modernizr.com</a></li>
-							<li><a href="diveintohtml5.com" target="_blank">diveintohtml5.com</a></li>
-							<li><a href="schema.org" target="_blank">schema.org</a> (microdata)</li>
-						</ul>
-					</section>
-				</section>
-				
+
 				<section>
-					<h1 class='huge'>THE END</h1>
-					<h3 class='pink lightblinktag'>Thanks !</h3>
+					<h1 class=''>HTML5 QuickStart</h1>
 					<br>
-					<h5 class="inverted">reveal.js by Hakim El Hattab / hakim.se</h5>
-					<h5 class="inverted">John / HTML5 meetup</h5>
-					<img src='img/revolunet.jpeg'/>
+					<ul>
+						<li style='font-size:50px'>Essayer <span class='pink'><a href="http://fr.html5boilerplate.com/" target="_blank"><b>HTML5 Boilerplate</b></a></span> pour le frontoffice</li>
+						<br>
+						<li style='font-size:50px'>Et <span class='pink'><a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem" target="_blank"><b>Twitter bootstrap</b></a></span> pour le backoffice</li>
+						<br>
+						<li><b>Bonnes pratiques prêt à l'emploi</b></li>
+					</ul>
+				</section>
+
+				<section>
+					<br><br>
+					<br><br>
+					<br><br>
+					<h2>RESPONSIVE DESIGN</h2>
+					<a href="http://guillaumecisco.github.com/ResponsiveDesignPresentationTF1/#/bored" target="_blank">Présentation</a>
+				</section>
+
+				<section>
+					<h1>Conclusion</h1>
+					<h1 class="orange">HTML5 c'est maintenant</h1>
+				</section>
+
+				<section>
+					<h1 class='huge'>FIN</h1>
+					<h2 class='pink lightblinktag'>Merci !</h2>
+					<br>
+					<h5 class="inverted">réalisé avec reveal.js par Hakim El Hattab</h5>
+					<h5 class="inverted">présentation originale de Julien Bouquillon</h5>
+				</section>
+
+				<section>
+					<h1>Ressources</h1>
+					<h3><a href="http://slides.html5rocks.com/" target="_blank">slides.html5rocks.com</a></h3>
+					<h3><a href="http://caniuse.com/" target="_blank">caniuse.com/</a></h3>
+					<h3><a href="http://diveintohtml5.info/" target="_blank">diveintohtml5.info</a></h3>
+					<h3><a href="http://htmlemailboilerplate.com/" target="_blank">htmlemailboilerplate.com</a></h3>
+					<h3><a href="http://diveintohtml5.info/" target="_blank">diveintohtml5.info</a></h3>
+					<h3><a href="https://github.com/" target="_blank">github.com</a></h3>
+					<h3><a href="http://html5demos.com" target="_blank">html5demos.com</a></h3>
+					<h3><a href="https://github.com/addyosmani/todomvc" target="_blank">todomvc</a></h3>
 				</section>
 			</div>
 
@@ -482,9 +619,9 @@ function error(result) {
 
 			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
 			<div class="progress"><span></span></div>
-			
+
 		</div>
-		
+
 		<script src="reveal/js/reveal.js"></script>
 		<script src="reveal/lib/highlight.js"></script>
 		<script>
@@ -516,8 +653,8 @@ function error(result) {
 				// Transition style
 				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
 			});
-  		
-  	 
+
+
 			hljs.initHighlightingOnLoad();
 		</script>
 
