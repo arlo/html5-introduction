@@ -1,11 +1,9 @@
 html5-introduction
 ====
 
-Here are my slides for the Paris HTML5 meetup on 16th february 2012.
+Présentation HTML5 
 
-Slides visible here : [http://www.revolunet.com/static/html5meetup][1]
+Largement inspirée de la présentation de Julien Bouquillon @revolunet au HTML5 meetup 
+Les slides sont visibles ici : [http://arlo.github.com/html5-introduction/]
 
-Uses [hakimel.se reaveal.js awesome slideshow tool][0]
-
- [0]: https://github.com/hakimel
- [1]: http://www.revolunet.com/static/html5meetup
+Uses [hakimel.se reaveal.js awesome slideshow tool]
