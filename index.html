@@ -1,32 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 	<head>
 		<meta charset="utf-8">
 
 		<title>introduction à HTML5</title>
 
-		<meta name="author" content="Arlo Borras/Hakim El Hattab">
-
+		<meta name="author" content="Arlo Borras">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
 		<link rel="stylesheet" href="reveal/css/reset.css">
 		<link rel="stylesheet" href="reveal/css/main.css">
+		<link rel="stylesheet" href="reveal/css/print.css" type="text/css" media="print">
+		
 
 		<link rel="stylesheet" href="reveal/lib/zenburn.css">
 		<style>
-			#reveal .slides {
-				top:45%;
-			}
-
-			#reveal .slides {
-				width: 1000px;
-			}
-
-			#reveal .footnote {
-				top:80%;
-			}
-
 			.pink {
 				color:#F06 !important;
 			}
@@ -70,7 +63,7 @@
 
 	<body>
 
-		<div id="reveal">
+		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
@@ -86,7 +79,7 @@
 				</section>
 
 				<section>
-					<h1>Qui sommes-nous ?</h1>
+					<h2>Qui sommes-nous ?</h2>
 					<br>
 					<p>
 						<strong>Guillaume Cisco</strong>, Ingénieur Web, DT e-TF1
@@ -103,7 +96,7 @@
 				</section>
 
 				<section>
-					<h1>Notre métier</h1>
+					<h2>Notre métier</h2>
 					<p class="fragment">
 						Développement de sites Web
 					</p>
@@ -118,7 +111,7 @@
 					<img class="fragment" src="img/logo-tfou.jpeg" height="100"/>
 				</section>
 				<section>
-					<h1>Plan</h1>
+					<h2>Plan</h2>
 					<br>
 					<h3>Un peu d'histoire</h3>
 					<h3>HTML5, la spec</h3>
@@ -135,46 +128,46 @@
 
 				<section>
 					<section>
-						<h1>Un peu d'histoire</h1>
+						<h2>Un peu d'histoire</h2>
 						<img src="img/pyramid.jpeg"/>
 					</section>
 					<section>
-						<h1>1990</h1>
+						<h2>1990</h2>
 						<h3>Tim Berners-Lee</h3>
 						Invente l'internet et HTML 1.0 au CERN
 						<br/>
 						<img src="img/tim.jpeg"/>
 					</section>
 					<section>
-						<h1>Premier site web</h1>
+						<h2>Premier site web</h2>
 						<br>
 						<img src="img/first-website.png"/>
 						<br>
 						(1991)
 					</section>
 					<section>
-						<h1>1994</h1>
+						<h2>1994</h2>
 						<h3>Tim Berners-Lee</h3>
 						création du W3C au Boston MIT
 						<br/>
 						<img src="img/w3c-small.jpeg"/>
 					</section>
 					<section>
-						<h1>Netscape Navigator</h1>
+						<h2>Netscape Navigator</h2>
 						<br>
 						<a href="http://fr.wikipedia.org/wiki/Hypertext_Markup_Language#1994_:_Apports_de_Netscape_Navigator" target="_blank"/><img src="img/1994.png"/></a>
 						<br>
 						(1994)
 					</section>
 					<section>
-						<h1>HTML 2</h1>
+						<h2>HTML 2</h2>
 						<br>
 						<img src="img/19-03_yahoo1996.png"/>
 						<br>
 						(1995)
 					</section>
 					<section>
-						<h1>HTML EARLY DAYS</h1>
+						<h2>HTML EARLY DAYS</h2>
 						<br>
 						<img src="img/pise.jpeg" style='float:left'/>
 						<br>
@@ -190,7 +183,7 @@
 						<div style='clear:both'></div>
 					</section>
 					<section>
-						<h1>LA DECONFITURE XHTML</h1>
+						<h2>LA DECONFITURE XHTML</h2>
 						<br><br>
 						<blockquote>
 						It is necessary to
@@ -202,7 +195,7 @@
 						<div style='text-align:right'>Tim Berners Lee, 2004</div>
 					</section>
 					<section>
-						<h1>RENAISSANCE</h1>
+						<h2>RENAISSANCE</h2>
 						<img src="img/phoenix.jpeg" style='float:left'/>
 						<br><br>
 						<ul>
@@ -216,7 +209,7 @@
 						<div style='clear:both'></div>
 					</section>
 					<section>
-						<h1>W3C AGAIN</h1>
+						<h2>W3C AGAIN</h2>
 						<img src="img/w3c-HTML5-adoption.png"/>
 						<br>
 						(2007)
@@ -229,17 +222,16 @@
 				</section>
 
 				<section>
-					<h1 style='font-size:200px'>HTML5 IS</h1>
+					<h1>HTML5 IS</h1>
 					<br>
-					<h3 class="lightblue" style="font-size:165px">A Working draft</h3>
+					<h2 class="lightblue">A Working draft</h2>
 					<br>
-					<h3 class="fragment" style="font-size:140px"><a href="http://www.w3.org/2011/02/htmlwg-pr.html" class="fragment orange"target="_blank">Available in 2014</a></h3>
+					<p class="fragment"><a href="http://www.w3.org/2011/02/htmlwg-pr.html" class="fragment orange"target="_blank">Available in 2014</a></p>
 				</section>
 
 				<section>
 					<section>
-						<h1 class='huge'>What's</h1>
-						<h1 class="blinktag huge pink">NEW ?</H1>
+						<h2>What's <span class="blinktag huge pink">NEW ?</span></h2>
 					</section>
 					<section>
 						<h1>Syntaxe</h1>
@@ -622,8 +614,11 @@ function error(result) {
 
 		</div>
 
-		<script src="reveal/js/reveal.js"></script>
 		<script src="reveal/lib/highlight.js"></script>
+		<script src="reveal/lib/classList.js"></script>
+		
+		<script src="reveal/js/reveal.js"></script>
+		
 		<script>
 			// Parse the query string into a key/value object
 			var query = {};
